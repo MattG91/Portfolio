@@ -1,0 +1,128 @@
+/***** General Styles *****/
+* {
+  box-sizing: border-box;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+}
+
+hr {
+  width: 80%;
+}
+
+
+/***** Header Styles *****/
+.header-text {
+  font-family: 'Lexend Zetta', sans-serif;
+}
+
+.heading {
+  margin-top: 5px;
+  background-color: #E7BB41;
+  color: white;
+  padding: 3px 0px;
+  border-radius: 6px;
+  height: auto;
+}
+
+h3 {
+    font-family: 'Lexend Zetta', sans-serif;
+    color: #01634f;
+}
+
+/***** Main Content Styles *****/
+.center {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 95%;
+}
+
+img {
+  width: 45%;
+}
+
+.inner-center {
+  width: 300px;
+}
+
+.text-left {
+  text-align: left;
+  margin: auto;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+.seperate {
+  margin: auto;
+}
+
+.paragraph-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #04977a;
+  font-size: 16px;
+}
+
+/***** Footer Styles *****/
+.bottom-padding {
+  margin-bottom: 35px;
+}
+
+footer a:link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #04977a;
+  color: white;
+  padding: 5px 5px;
+  margin: 0px 2px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+footer a:visited {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(143, 0, 143);
+}
+
+footer a:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: #06e4b7;
+}
+
+footer a:active {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  padding: 7px 7px;
+}
+
+/*****  Media Queries *****/
+@media all and (min-width: 900px) {
+  .group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+  }
+  
+  .item {
+    flex: 1;
+    padding: 10px 5px;
+  }
+
+  .item-double {
+    flex: 2;
+    padding: 10px 5px;
+  }
+}
+
+
