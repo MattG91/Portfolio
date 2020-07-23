@@ -123,6 +123,9 @@ footer a:active {
     flex: 2;
     padding: 10px 5px;
   }
+  .wrap {
+    flex-wrap: wrap;
+  }
 }
 
 
