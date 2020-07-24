@@ -20,6 +20,24 @@ hr {
   font-family: 'Lexend Zetta', sans-serif;
 }
 
+header nav {
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding-left: 0;
+
+}
+
+header nav ul li {
+  justify-content: space-between;
+  width: 50%;
+  margin: 3px auto 3px auto;
+}
+
 .heading {
   margin-top: 5px;
   background-color: #E7BB41;
@@ -32,6 +50,7 @@ hr {
 h3 {
     font-family: 'Lexend Zetta', sans-serif;
     color: #01634f;
+    padding: 3px 0;
 }
 
 /***** Main Content Styles *****/
@@ -45,6 +64,9 @@ h3 {
 img {
   width: 45%;
 }
+aside img {
+  margin-top: 10px;
+}
 
 .inner-center {
   width: 300px;
@@ -53,6 +75,7 @@ img {
 .text-left {
   text-align: left;
   margin: auto;
+  padding-left: 4%;
 }
 
 ul, ol {
@@ -70,53 +93,87 @@ ul, ol {
   font-size: 16px;
 }
 
+.main-paragraph {
+  margin-bottom: 15px;
+}
+
 /***** Footer Styles *****/
 .bottom-padding {
   margin-bottom: 35px;
 }
 
-footer a:link {
+footer ul li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+header a:link,
+footer a:link,
+aside a:link {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 16px;
   background-color: #04977a;
   color: white;
   padding: 4px 4px;
-  margin: 5px 5px;
   border-radius: 6px;
   text-decoration: none;
+  text-align: center;
+  width: 30%;
 }
 
-footer a:visited {
+header a:visited,
+footer a:visited,
+aside a:visited {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: rgb(143, 0, 143);
+  color: #ff93ed;
 }
 
-footer a:hover {
+header a:hover,
+footer a:hover,
+aside a:hover {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   background-color: #06e4b7;
 }
 
-footer a:active {
+header a:active,
+footer a:active,
+aside a:active {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   padding: 7px 7px;
 }
 
 /*****  Media Queries *****/
-@media all and (min-width: 900px) {
+@media all and (min-width: 800px) {
   .group {
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
     justify-content: space-evenly;
   }
+
+  header nav,
+  #main-header {
+    width: 50%;
+  }
+
+  footer nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
   
   .item {
     flex: 1;
     padding: 10px 5px;
+  }
+
+  main article .item {
+    min-width: 40%;
   }
 
   .item-double {
@@ -128,5 +185,8 @@ footer a:active {
     align-content: space-between;
   }
 }
+
+
+
 
 
