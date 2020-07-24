@@ -14,8 +14,19 @@ hr {
   width: 80%;
 }
 
-
 /***** Header Styles *****/
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 .header-text {
   font-family: 'Lexend Zetta', sans-serif;
 }
@@ -25,21 +36,20 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
-  flex-direction: row;
+  display: block;
   list-style-type: none;
   padding-left: 0;
-
+  margin-bottom: 10px;
 }
 
 header nav ul li {
   justify-content: space-between;
   width: 50%;
-  margin: 3px auto 3px auto;
+  margin: 10px auto 10px auto;
 }
 
 .heading {
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: #E7BB41;
   color: white;
   padding: 3px 0px;
@@ -64,6 +74,7 @@ h3 {
 img {
   width: 45%;
 }
+
 aside img {
   margin-top: 10px;
 }
@@ -90,7 +101,7 @@ ul, ol {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #04977a;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .main-paragraph {
@@ -100,6 +111,10 @@ ul, ol {
 /***** Footer Styles *****/
 .bottom-padding {
   margin-bottom: 35px;
+}
+
+footer ul {
+  padding-left: 0;
 }
 
 footer ul li {
@@ -112,7 +127,7 @@ footer a:link,
 aside a:link {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: .95em;
   background-color: #04977a;
   color: white;
   padding: 4px 4px;
@@ -160,7 +175,8 @@ aside a:active {
     width: 50%;
   }
 
-  footer nav ul {
+  footer nav ul,
+  header nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -180,11 +196,17 @@ aside a:active {
     flex: 2;
     padding: 10px 5px;
   }
-  .wrap {
-    flex-wrap: wrap;
-    align-content: space-between;
+}
+
+@media all and (min-width: 400px) {
+  header nav ul {
+    display: flex;
   }
 }
+
+
+
+
 
 
 
